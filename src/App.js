@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { Fragment } from "react";
+import { Routes, Route } from "react-router-dom";
+import Sidebar from "./components/sidebar/Sidebar";
+import Welcome from "./components/pages/Welcome";
+import About from "./components/pages/About";
+import Work from "./components/pages/Work";
+import Contact from "./components/pages/Contact";
 
-function App() {
+const App = () => {
+  // sidebar
+  // main area (
+  // Welcome page
+  // about me page
+  // work page
+  // contact me page
+  // )
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Sidebar />
+      <main>
+        <Routes>
+          <Route path="/" element={<Welcome />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/work" element={<Work />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </main>
+    </Fragment>
   );
-}
+};
 
 export default App;

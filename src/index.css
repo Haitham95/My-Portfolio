@@ -1,13 +1,61 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Google Font import */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700&display=swap");
+
+:root {
+  --very-dark: #1e202a;
+  --dark: #1f212e;
+  --dark-blue: #252a41;
+  --light-blue: #8b97c6;
+  --primary-text: #fff;
+  --secondary-text: #363e57;
+  --mint: #1db489;
+  --red: #dc414c;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.light-theme {
+}
+
+/* Basic setup */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Raleway", sans-serif;
+  height: 100vh;
+  line-height: 1.6;
+  color: var(--primary-text);
+  background-color: var(--very-dark);
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-text);
+}
+
+/* utilities */
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+main {
+  width: calc(100vw - 20vw);
+  position: relative;
+  left: 20vw;
+  height: 100vh;
+  background-color: var(--dark-blue);
 }
