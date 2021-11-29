@@ -59,3 +59,19 @@ main {
   height: 100vh;
   background-color: var(--dark-blue);
 }
+
+section {
+  animation: appear 0.9s linear;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
