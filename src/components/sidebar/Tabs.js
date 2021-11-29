@@ -41,7 +41,7 @@ const Tabs = (props) => {
           className={({ isActive }) => (isActive ? classes.active : "")}
         >
           <img src={contactIcon} className={classes.icon} alt="contact-icon" />
-          Contact Me
+          let's talk
         </NavLink>
       </li>
     </ul>
