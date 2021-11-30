@@ -1,5 +1,5 @@
 /* Google Font import */
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;700&display=swap");
 
 :root {
   --very-dark: #1e202a;
@@ -24,7 +24,7 @@
 }
 
 html {
-  font-family: "Raleway", sans-serif;
+  font-family: "Oswald", sans-serif;
   height: 100vh;
   line-height: 1.6;
   color: var(--primary-text);
