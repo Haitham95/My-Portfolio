@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section className={helper}>
       <div className={classes["about_info"]}>
-        <h1>About me page</h1>
+        <h1>About me</h1>
         <p>
           Hello world! I’m Haitham and I’m a self-taught front-end web developer
           based in Egypt.
