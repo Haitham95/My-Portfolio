@@ -1,3 +1,5 @@
+import { useState } from "react";
+import Project from "./Project";
 import classes from "./Work.module.css";
 
 const projects = [
@@ -7,62 +9,60 @@ const projects = [
     desc: "project desc 1",
     bgImg:
       "https://images.unsplash.com/photo-1533468432434-200de3b5d528?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80",
+    tools: ["html5", "css3", "js", "react", "git"],
   },
   {
     id: 2,
     title: "project 2",
     desc: "project desc 2",
+    bgImg:
+      "https://images.unsplash.com/photo-1533468432434-200de3b5d528?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80",
+    tools: ["html5", "css3", "js", "react", "git"],
+  },
+  {
+    id: 3,
+    title: "project 3",
+    desc: "project 3",
+    bgImg:
+      "https://images.unsplash.com/photo-1533468432434-200de3b5d528?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80",
+    tools: ["html5", "css3", "js", "git"],
+  },
+  {
+    id: 4,
+    title: "project 4",
+    desc: "project 4",
+    bgImg:
+      "https://images.unsplash.com/photo-1533468432434-200de3b5d528?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80",
+    tools: ["html5", "css3", "js", "git"],
+  },
+  {
+    id: 5,
+    title: "project 5",
+    desc: "project 5",
+    bgImg:
+      "https://images.unsplash.com/photo-1533468432434-200de3b5d528?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80",
+    tools: ["html5", "css3", "js", "git"],
   },
 ];
 
 const Work = () => {
+  const [isHighlighted, setIsHighlighted] = useState(null);
   const helper = `${classes.work} container`;
+
   return (
     <section className={helper}>
       <div className={classes.layout}>
-        <div
-          style={{
-            backgroundImage: `url(${projects[0].bgImg})`,
-          }}
-          className={`${classes.slide} slide-1 ${classes.active}`}
-        >
-          <div className={classes["project_info"]}>
-            <h2>{projects[0].title}</h2>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-            </p>
-            <div className={classes["project_icons"]}>
-              <p>logo</p>
-              <p>logo</p>
-              <p>logo</p>
-            </div>
-          </div>
-        </div>
-        <div className={`${classes.slide} slide-1`}>
-          <div className={classes["project_info"]}>
-            <h2>project title</h2>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-            </p>
-            <div className={classes["project_icons"]}>
-              <p>logo</p>
-              <p>logo</p>
-              <p>logo</p>
-            </div>
-          </div>
-        </div>
+        {projects.map((project) => (
+          <Project
+            obj={project}
+            key={project.id}
+            id={project.id}
+            curHighlighted={isHighlighted}
+            clickHandler={() => {
+              setIsHighlighted(project.id);
+            }}
+          />
+        ))}
       </div>
     </section>
   );

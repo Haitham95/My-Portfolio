@@ -1,4 +1,5 @@
 import classes from "./About.module.css";
+import resume from "../../assets/cv/Haitham Sayed Muhammad Resume.pdf";
 
 const About = () => {
   const helper = `${classes.about} container`;
@@ -6,10 +7,18 @@ const About = () => {
     <section className={helper}>
       <div className={classes["about_info"]}>
         <h1>About me</h1>
+
         <p>
           Hello world! I’m Haitham and I’m a self-taught front-end web developer
           based in Egypt.
         </p>
+        <a
+          href={resume}
+          download="Haitham Sayed's resume"
+          className={classes.btn}
+        >
+          Download Resume
+        </a>
         <h2>Web development:</h2>
         <p>
           My interest in web development started back in 2018, I began with a

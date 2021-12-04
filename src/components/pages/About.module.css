@@ -16,7 +16,7 @@
   text-transform: uppercase;
   text-align: center;
   width: 100%;
-  padding: 15px;
+  padding: 10px;
   font-weight: 800;
 }
 
@@ -45,4 +45,16 @@
 .special_text {
   color: var(--red);
   font-weight: 400;
+}
+
+.btn {
+  background-color: var(--red);
+  color: #fff;
+  padding: 8px 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  border-radius: 50px;
+  font-size: 14px;
+  align-self: center;
+  margin-top: 10px;
 }
