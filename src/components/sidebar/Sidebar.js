@@ -1,5 +1,6 @@
+import { Link } from "react-router-dom";
 import classes from "./Sidebar.module.css";
-import svg from "./certificate-solid.svg";
+import logo from "../../assets/logo/logo.png";
 import github from "../../assets/icons/github-brands.svg";
 import facebook from "../../assets/icons/facebook-brands.svg";
 import linkedin from "../../assets/icons/linkedin-brands.svg";
@@ -9,7 +10,9 @@ const Sidebar = (props) => {
   return (
     <div className={classes.sidebar}>
       <div className={classes.logo}>
-        <img src={svg} alt="logo" />
+        <Link to="/">
+          <img src={logo} alt="logo" />
+        </Link>
       </div>
       <Tabs onClick={props.onClick} />
       <div className={classes.social}>

@@ -7,7 +7,6 @@ const About = () => {
     <section className={helper}>
       <div className={classes["about_info"]}>
         <h1>About me</h1>
-
         <p>
           Hello world! I’m Haitham and I’m a self-taught front-end web developer
           based in Egypt.
@@ -55,7 +54,7 @@ const About = () => {
             social media marketing{" "}
           </span>{" "}
           and
-          <span className={classes["special_text"]}> media buying</span>
+          <span className={classes["special_text"]}> media buying</span>.
         </p>
         <h2>More about me:</h2>
         <p>
@@ -66,7 +65,7 @@ const About = () => {
           <span className={classes["special_text"]}> coach </span> as I have a
           wide knowledge when it comes to building muscle memory and narrowing
           down your range of mistakes and handling emotional stress while
-          playing
+          playing.
         </p>
       </div>
     </section>

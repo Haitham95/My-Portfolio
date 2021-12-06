@@ -1,12 +1,12 @@
 .welcome {
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
 .flex {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   height: 100%;
 }
@@ -35,4 +35,37 @@
   font-size: 1.2rem;
   font-weight: 400;
   padding: 1.5rem 0;
+}
+
+@media (max-width: 991.98px) {
+  .img {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .img {
+    width: 150px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .img {
+    width: 120px;
+    margin-top: 0;
+  }
+
+  .description h1 {
+    font-size: var(--sm-heading);
+  }
+
+  .description h2 {
+    font-size: var(--sm-secondary);
+  }
+
+  .description p {
+    font-size: var(--sm-info);
+    font-weight: 400;
+    padding: 0.2rem 0;
+  }
 }

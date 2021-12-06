@@ -14,7 +14,7 @@ const Tabs = (props) => {
           className={({ isActive }) => (isActive ? classes.active : "")}
         >
           <img src={welcomeIcon} className={classes.icon} alt="welcome-icon" />
-          welcome
+          <span>welcome</span>
         </NavLink>
       </li>
       <li>
@@ -23,7 +23,7 @@ const Tabs = (props) => {
           className={({ isActive }) => (isActive ? classes.active : "")}
         >
           <img src={aboutIcon} className={classes.icon} alt="about-icon" />
-          About Me
+          <span>About me</span>
         </NavLink>
       </li>
       <li>
@@ -32,7 +32,7 @@ const Tabs = (props) => {
           className={({ isActive }) => (isActive ? classes.active : "")}
         >
           <img src={workIcon} className={classes.icon} alt="work-icon" />
-          Work
+          <span>Work</span>
         </NavLink>
       </li>
       <li>
@@ -41,7 +41,7 @@ const Tabs = (props) => {
           className={({ isActive }) => (isActive ? classes.active : "")}
         >
           <img src={contactIcon} className={classes.icon} alt="contact-icon" />
-          let's talk
+          <span>let's talk</span>
         </NavLink>
       </li>
     </ul>

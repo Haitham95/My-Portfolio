@@ -7,13 +7,6 @@ import Work from "./components/pages/Work";
 import Contact from "./components/pages/Contact";
 
 const App = () => {
-  // sidebar
-  // main area (
-  // Welcome page
-  // about me page
-  // work page
-  // contact me page
-  // )
   return (
     <Fragment>
       <Sidebar />
