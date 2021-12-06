@@ -18,9 +18,7 @@ const Project = (props) => {
       return react;
     } else if (tool === "git") {
       return git;
-    } else {
-      return "#";
-    }
+    } 
   };
 
   console.log();

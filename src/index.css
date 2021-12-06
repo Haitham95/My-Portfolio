@@ -12,9 +12,6 @@
   --red: #dc414c;
 }
 
-.light-theme {
-}
-
 /* Basic setup */
 
 * {
@@ -53,9 +50,9 @@ a {
 }
 
 main {
-  width: calc(100vw - 20vw);
+  width: calc(100vw - 23vw);
   position: relative;
-  left: 20vw;
+  left: 23vw;
   height: 100vh;
   background-color: var(--dark-blue);
 }
@@ -67,7 +64,7 @@ section {
 @keyframes appear {
   0% {
     opacity: 0;
-    transform: translateX(-60px);
+    transform: translateX(-50px);
   }
 
   100% {
@@ -75,3 +72,14 @@ section {
     transform: translateX(0);
   }
 }
+
+/* @media (max-width: 575.98px) { ... }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { ... }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { ... } */

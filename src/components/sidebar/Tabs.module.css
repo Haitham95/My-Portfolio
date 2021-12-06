@@ -1,7 +1,7 @@
 .nav_links {
   font-size: 20px;
   text-transform: uppercase;
-  margin: 3rem 0;
+  padding: 3rem 0;
   width: 100%;
 }
 
@@ -20,7 +20,10 @@
 
 .nav_links li a {
   display: flex;
+  width: fit-content;
   align-items: center;
+  padding-bottom: 2px;
+  position: relative;
 }
 
 .nav_links li a:hover {
@@ -32,24 +35,8 @@
     brightness(87%) contrast(99%);
 }
 
-.active::after {
-  content: "";
-  width: 120px;
-  animation-name: fill;
-  animation-duration: 1s;
-  height: 4px;
-  border-bottom: 3px solid var(--red);
-  position: absolute;
-  right: -30px;
-  top: 20px;
-}
-
 .active {
   color: var(--red);
-}
-
-.inactive {
-  color: var(--primary-text);
 }
 
 .active > .icon {
@@ -59,12 +46,10 @@
 
 @keyframes fill {
   0% {
-    left: 154px;
     width: 0;
   }
 
   100% {
-    left: 154px;
-    width: 120px;
+    width: 100%;
   }
 }
