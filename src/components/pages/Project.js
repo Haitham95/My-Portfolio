@@ -18,7 +18,7 @@ const Project = (props) => {
       return react;
     } else if (tool === "git") {
       return git;
-    } 
+    }
   };
 
   console.log();
@@ -38,6 +38,16 @@ const Project = (props) => {
         <div className={classes["project_info"]}>
           <h2>{props.obj.title}</h2>
           <p>{props.obj.desc}</p>
+          <div className={classes.links}>
+            {props.obj.demoLink && (
+              <a href={props.obj.demoLink} target="_blank" rel="noreferrer">
+                Live Demo
+              </a>
+            )}
+            <a href={props.obj.githubLink} target="_blank" rel="noreferrer">
+              Github
+            </a>
+          </div>
           <div className={classes["project_icons"]}>
             {props.obj.tools.map((tool) => (
               <div className={classes.icon}>

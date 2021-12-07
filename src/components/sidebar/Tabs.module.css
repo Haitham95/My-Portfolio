@@ -101,6 +101,7 @@
   .nav_links {
     font-size: 16px;
     padding: 0;
+    flex-basis: 170%;
   }
 
   .icon {

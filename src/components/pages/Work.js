@@ -1,47 +1,59 @@
 import { useState } from "react";
 import Project from "./Project";
 import classes from "./Work.module.css";
+import portfolio from "../../assets/projects/portfolio.png";
+import calculator from "../../assets/projects/calculator.jpg";
+import loopstudio from "../../assets/projects/loopstudio.jpg";
+import socialmedia from "../../assets/projects/socialmedia.jpg";
+import clipboard from "../../assets/projects/clipboard.jpg";
 
 const projects = [
   {
     id: 1,
-    title: "project 1",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    bgImg:
-      "https://images.unsplash.com/photo-1533468432434-200de3b5d528?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80",
+    title: "My Portfolio",
+    desc: "This is my first react project and i really enjoyed it alot, I used react-routing for displaying different page's content, Also i wanted to be able to edit the website to make it updatable so i made a single file that controls every part that i need to change/update later, This project was a fun challenge for me",
+    bgImg: portfolio,
+    demoLink: null,
+    githubLink: "https://github.com/Haitham95/My-Portfolio",
     tools: ["html5", "css3", "js", "react", "git"],
   },
   {
     id: 2,
-    title: "project 2",
-    desc: "project desc 2",
-    bgImg:
-      "https://images.unsplash.com/photo-1533468432434-200de3b5d528?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80",
-    tools: ["html5", "css3", "js", "react", "git"],
+    title: "Calculator app",
+    desc: "I created this calculator app with native javaScript using ES6 classes to get a feeling of it, UI is provided by www.frontendmentor.io",
+    bgImg: calculator,
+    demoLink: "https://haitham95-calculator-app.netlify.app/",
+    githubLink: "https://github.com/Haitham95/calculator-app-main",
+    tools: ["html5", "css3", "js", "git"],
   },
   {
     id: 3,
-    title: "project 3",
-    desc: "project 3",
-    bgImg:
-      "https://images.unsplash.com/photo-1533468432434-200de3b5d528?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80",
+    title: "social media dashboard with theme switcher",
+    desc: "A challenge from www.frontendmentor.io to practice my HTML, CSS and JavaScript",
+    bgImg: socialmedia,
+    demoLink:
+      "https://haitham95-social-media-dashboard-with-theme-switcher-master.netlify.app/",
+    githubLink:
+      "https://github.com/Haitham95/social-media-dashboard-with-theme-switcher-master",
     tools: ["html5", "css3", "js", "git"],
   },
   {
     id: 4,
-    title: "project 4",
-    desc: "project 4",
-    bgImg:
-      "https://images.unsplash.com/photo-1533468432434-200de3b5d528?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80",
+    title: "loopstudios landing page",
+    desc: "A challenge from www.frontendmentor.io to practice my HTML, CSS and JavaScript",
+    bgImg: loopstudio,
+    demoLink: "https://haitham95-loopstudios-landing-page-main.netlify.app/",
+    githubLink: "https://github.com/Haitham95/loopstudios-landing-page-main",
     tools: ["html5", "css3", "js", "git"],
   },
   {
     id: 5,
-    title: "project 5",
-    desc: "project 5",
-    bgImg:
-      "https://images.unsplash.com/photo-1533468432434-200de3b5d528?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80",
-    tools: ["html5", "css3", "js", "git"],
+    title: "Clipboard landing page",
+    desc: "A challenge from www.frontendmentor.io to practice my HTML and CSS",
+    bgImg: clipboard,
+    demoLink: "https://haitham95-clipboard-landing-page.netlify.app/",
+    githubLink: "https://github.com/Haitham95/clipboard-landing-page-master",
+    tools: ["html5", "css3", "git"],
   },
 ];
 
