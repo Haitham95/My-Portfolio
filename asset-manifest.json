@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c0e76446.chunk.css",
+    "main.js": "/static/js/main.9d873065.chunk.js",
+    "main.js.map": "/static/js/main.9d873065.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.75b893ca.js",
+    "runtime-main.js.map": "/static/js/runtime-main.75b893ca.js.map",
+    "static/js/2.46a5a107.chunk.js": "/static/js/2.46a5a107.chunk.js",
+    "static/js/2.46a5a107.chunk.js.map": "/static/js/2.46a5a107.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.c0e76446.chunk.css.map": "/static/css/main.c0e76446.chunk.css.map",
+    "static/js/2.46a5a107.chunk.js.LICENSE.txt": "/static/js/2.46a5a107.chunk.js.LICENSE.txt",
+    "static/media/Haitham Sayed Muhammad Resume.d921e752.pdf": "/static/media/Haitham Sayed Muhammad Resume.d921e752.pdf",
+    "static/media/calculator.b268d8b6.jpg": "/static/media/calculator.b268d8b6.jpg",
+    "static/media/clipboard.47c0b8af.jpg": "/static/media/clipboard.47c0b8af.jpg",
+    "static/media/code-slash-outline.6cfd4ffe.svg": "/static/media/code-slash-outline.6cfd4ffe.svg",
+    "static/media/css3.e87d85be.svg": "/static/media/css3.e87d85be.svg",
+    "static/media/facebook-brands.033c50dd.svg": "/static/media/facebook-brands.033c50dd.svg",
+    "static/media/final profile.31573ffc.png": "/static/media/final profile.31573ffc.png",
+    "static/media/git.5d54fd6a.svg": "/static/media/git.5d54fd6a.svg",
+    "static/media/github-brands.e2f07326.svg": "/static/media/github-brands.e2f07326.svg",
+    "static/media/home-outline.8327a4ec.svg": "/static/media/home-outline.8327a4ec.svg",
+    "static/media/html5.87d71701.svg": "/static/media/html5.87d71701.svg",
+    "static/media/js.5e462a04.svg": "/static/media/js.5e462a04.svg",
+    "static/media/linkedin-brands.f4041044.svg": "/static/media/linkedin-brands.f4041044.svg",
+    "static/media/logo.373c8778.png": "/static/media/logo.373c8778.png",
+    "static/media/loopstudio.18341244.jpg": "/static/media/loopstudio.18341244.jpg",
+    "static/media/mail-outline.41385082.svg": "/static/media/mail-outline.41385082.svg",
+    "static/media/person-circle-outline.fbe8c488.svg": "/static/media/person-circle-outline.fbe8c488.svg",
+    "static/media/portfolio.c953f3dc.png": "/static/media/portfolio.c953f3dc.png",
+    "static/media/react.4e0c4c03.svg": "/static/media/react.4e0c4c03.svg",
+    "static/media/socialmedia.738301e9.jpg": "/static/media/socialmedia.738301e9.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.75b893ca.js",
+    "static/js/2.46a5a107.chunk.js",
+    "static/css/main.c0e76446.chunk.css",
+    "static/js/main.9d873065.chunk.js"
+  ]
+}
