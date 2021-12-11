@@ -64,6 +64,24 @@
 
   .nav_links li {
     padding: 0 5px;
+    position: relative;
+  }
+
+  .nav_links li a {
+    height: 35px;
+  }
+
+  .nav_links li a:focus {
+    outline: none !important;
+  }
+
+  .nav_links li::after {
+    border-right: 2px solid var(--red);
+    padding: 10px 10px;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 7px;
   }
 
   .nav_links li span {
@@ -99,18 +117,18 @@
 
 @media (max-width: 575.98px) {
   .nav_links {
-    font-size: 16px;
+    font-size: 20px;
     padding: 0;
-    flex-basis: 170%;
+    flex-basis: 200%;
   }
 
   .icon {
-    width: 20px;
+    width: 35px;
     padding-right: 2px;
   }
 
   .nav_links li .active span {
-    width: 62px;
+    width: 80px;
     animation-name: slideRight;
     animation-duration: 0.5s;
     animation-timing-function: ease-in-out;
