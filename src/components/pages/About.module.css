@@ -72,6 +72,10 @@
 }
 
 @media (max-width: 575.98px) {
+  .about {
+    padding-bottom: 110px;
+  }
+
   .about_info h1 {
     font-size: var(--sm-heading);
   }
